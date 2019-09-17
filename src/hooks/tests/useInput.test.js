@@ -17,6 +17,10 @@ describe('the useInput hook', () => {
         global.fetch.mockClear();
     });
 
+    afterAll(() => {
+        global.fetch.mockRestore();
+    })
+
     it('should make the api call to fetch the default value and set it in the state', async () => {
         const { result, waitForNextUpdate } = renderHook(() => useInput());
         await waitForNextUpdate();

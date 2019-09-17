@@ -10,7 +10,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "test": "react-scripts test  --watchAll=false",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -30,6 +30,7 @@
   },
   "devDependencies": {
     "@testing-library/react": "^9.1.4",
-    "@testing-library/react-hooks": "^2.0.1"
+    "@testing-library/react-hooks": "^2.0.1",
+    "react-test-renderer": "^16.9.0"
   }
 }
